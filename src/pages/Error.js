@@ -1,6 +1,7 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Error extends Component {
     render() {
@@ -12,6 +13,7 @@ class Error extends Component {
                     <p className="error__text">Oups! La page que 
                         vous demandez n'existe pas.
                     </p>
+                    <Link to="/">Retourner sur la page d'accueil</Link>
                 </div>
                 <Footer />
             </>

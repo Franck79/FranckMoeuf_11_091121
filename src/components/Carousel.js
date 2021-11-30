@@ -22,12 +22,6 @@ class Carousel extends Component {
 
         }
 
-        // if (this.state.indexImageDisplayed  ) {
-
-        //     this.setState({indexImageDisplayed : countPictures});
-
-        // }
-
         return (
             <>
                 <div className="carousel">

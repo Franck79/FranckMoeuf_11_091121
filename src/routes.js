@@ -8,6 +8,7 @@ const Routes = (
     <RouteContainer>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route exact path="/logement/about" element={<About />} />
         <Route path="/logement" element={<Property />} />
         <Route path="*" element={<Error />} />
     </RouteContainer>
