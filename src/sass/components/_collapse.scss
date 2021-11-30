@@ -47,14 +47,16 @@
     }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 750px) {
+    .sectionCollapse {
+        margin: 0 200px;
+    }
     .collapse {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 10px 10px;
-        margin: 0 140px;
         
         button {
             display: flex;

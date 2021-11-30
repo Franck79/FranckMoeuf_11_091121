@@ -2,13 +2,13 @@
     margin: 0 10px;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 750px) {
     .sectionText {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         //grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 45px;
-        margin: 0 75px;
+        margin: 0 100px;
     }
 }
 

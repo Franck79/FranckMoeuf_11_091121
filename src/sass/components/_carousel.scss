@@ -2,7 +2,7 @@
     position: relative;
     border-radius: 10px;
     height: 255px;
-    margin: 20px 16px;
+    margin: 0px 20px 0 20px;
 
     &__arrowRight {
         position: absolute;
@@ -41,12 +41,12 @@
 
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 750px) {
     .carousel {
         position: relative;
         border-radius: 25px;
-        height: 375px;
-        margin: 50px 70px;
+        height: 415px;
+        margin: 50px 100px;
 
         &__arrowRight {
             height: 79px;

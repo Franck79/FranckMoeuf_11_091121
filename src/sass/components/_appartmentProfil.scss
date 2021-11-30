@@ -1,5 +1,5 @@
 .property {
-    margin: 20px 16px;
+    margin: 0px 20px 10px 20px;
 
     &__title {
         display: flex;
@@ -32,13 +32,13 @@
             font-family: 'Montserrat', sans-serif;
             font-style: normal;
             font-weight: 500;
-            font-size: 8px;
+            font-size: 10px;
             line-height: 142.6%;
             text-align: center;
             color: $color-1;
             padding: 3px 20px;
             margin-right: 8px;
-            margin-top: 7px;
+            margin-top: 5px;
         }
     }
 
@@ -103,23 +103,23 @@
     }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 750px) {
     .property {
         position: relative;
         height: 130px;
-        margin: 0 75px;
+        margin: 0 100px;
 
         &__title {
             position: relative;
             bottom: 16px;
     
             h2 {
-                font-size: 22px;
-                padding-bottom: 8px;
+                font-size: 36px;
+                padding-bottom: 15px;
             }
     
             p {
-                font-size: 12px;
+                font-size: 18px;
             }
         }
 
@@ -130,7 +130,7 @@
             .tag {
                 
                 border-radius: 10px;
-                font-size: 10px;
+                font-size: 14px;
             }
         }
 
@@ -145,16 +145,16 @@
             bottom: 130px;
 
             .rating {
-                width: 150px;
-                margin-top: 10px;
+                width: 183px;
+                margin-top: 14px;
                 
                 span {
                     margin: 4px;
                 }
 
                 span img {
-                    height: 18px;
-                    width: 18px;
+                    height: 30px;
+                    width: 30px;
                 }
             }
 
@@ -170,7 +170,7 @@
                     align-items: center;
 
                     span {
-                        font-size: 12px;
+                        font-size: 18px;
                         text-align: center;
                     }
                 }

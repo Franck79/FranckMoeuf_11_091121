@@ -2,33 +2,30 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 1rem;
-    //margin-top: 7rem;
+    margin: 0 20px;
     padding: 0;
-}
-
-@media screen and (min-width: 500px) {
-    .gallery {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 40px;
-            background: #F7F7F7;
-            border-radius: 10px;
-            margin: 0 16px;
-            padding: 18px;
-        }
-
 }
 
 @media screen and (min-width: 750px) {
     .gallery {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             grid-gap: 40px;
+            background: none;
+            margin: 20px 100px;
+        }
+
+}
+
+@media screen and (min-width: 1350px) {
+    .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 56px;
             background: #F7F7F7;
             border-radius: 25px;
-            margin: 50px 70px;
-            padding: 20px;
+            margin: 20px 100px;
+            padding: 56px 50px;
         }
 
 }

@@ -2,28 +2,28 @@
     display: flex;
     justify-content: space-between;
     position: relative;
+    margin: 20px 20px 16px 20px;
 
     &__logo {
-        padding: 16px 0 0 23px;
 
         img {
-            width: 134px;
-            height: 45px;
+            width: 145px;
+            height: 47px;
         }
     }
 
     &__navigation {
-        position: absolute;
-        top: 38px;
-        right: 11px;
+        margin: 20px 0;
 
         a {
             display: inline;
-            padding: 0 5px;
+            padding-left: 12px;
             font-weight: 500;
-            size: 20px;
+            font-size: 12px;
+            text-align: right;
             color: $color-2;
             position: relative;
+            text-transform: uppercase;
             
         }
         .nav-active {
@@ -41,29 +41,25 @@
     }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 750px) {
     .header {
+        margin: 40px 100px 0 100px;
         
         &__logo {
-            padding: 30px 0 0 70px;
+            //padding: 30px 0 0 70px;
     
             img {
-                width: 165px;
-                height: 55px;
+                width: 210px;
+                height: 68px;
             }
         }
 
         &__navigation {
-            position: absolute;
-            top: 50px;
-            right: 70px;
 
             a {
-                display: inline;
-                padding: 0 15px;
-                font-weight: 500;
-                size: 20px;
-                color: $color-2;
+                padding-left: 57px;
+                font-size: 24px;
+                text-transform: unset;
             }
         }
     }
