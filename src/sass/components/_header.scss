@@ -1,0 +1,70 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &__logo {
+        padding: 16px 0 0 23px;
+
+        img {
+            width: 134px;
+            height: 45px;
+        }
+    }
+
+    &__navigation {
+        position: absolute;
+        top: 38px;
+        right: 11px;
+
+        a {
+            display: inline;
+            padding: 0 5px;
+            font-weight: 500;
+            size: 20px;
+            color: $color-2;
+            position: relative;
+            
+        }
+        .nav-active {
+            &::after {
+                content: "";
+                width: 85%;
+                height: 2px;
+                background: $color-2;
+                position: absolute;
+                bottom: 1px;
+                right: 10%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .header {
+        
+        &__logo {
+            padding: 30px 0 0 70px;
+    
+            img {
+                width: 165px;
+                height: 55px;
+            }
+        }
+
+        &__navigation {
+            position: absolute;
+            top: 50px;
+            right: 70px;
+
+            a {
+                display: inline;
+                padding: 0 15px;
+                font-weight: 500;
+                size: 20px;
+                color: $color-2;
+            }
+        }
+    }
+}

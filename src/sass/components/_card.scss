@@ -1,0 +1,61 @@
+.card {
+    position: relative;
+    margin: 10px 16px;
+    width: 100%;
+    height: 255px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+    
+    &::after {
+        content: "";
+        position: absolute;
+        padding: 1.2rem;
+        //width: 100%;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: linear-gradient(180deg, transparent, rgba(0,0,0,0.5) 50%);
+        border-radius: 10px;
+    }
+
+    p {
+        position: absolute;
+        bottom: 15px;
+        left: 10px;
+        color: $color-1;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 10px;
+        z-index: 1;
+        text-align: left;
+    }
+
+    img {
+        object-fit: cover;
+        width: 100%;
+	    height: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+    .card {
+        margin: 10px 2.5px;
+        height: 100%;
+    
+        p {
+            font-size: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 500px) {
+    .card {
+        height: 165px;
+        margin: 0;
+    }
+}
