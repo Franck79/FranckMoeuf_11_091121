@@ -30,12 +30,12 @@
             &::after {
                 content: "";
                 width: 85%;
-                height: 2px;
+                height: 1px;
                 background: $color-2;
                 position: absolute;
-                bottom: 1px;
-                right: 10%;
-                transform: translateX(-50%);
+                bottom: 0px;
+                right: 1%;
+                //transform: translateX(-50%);
             }
         }
     }
@@ -60,6 +60,15 @@
                 padding-left: 57px;
                 font-size: 24px;
                 text-transform: unset;
+            }
+
+            .nav-active {
+                &::after {
+                   width: 64%;
+                    height: 1px;
+                    bottom: 1px;
+                    right: 1%;
+                }
             }
         }
     }

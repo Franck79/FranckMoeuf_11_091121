@@ -17,7 +17,7 @@ class AppartmentProfil extends Component {
 
         for (let i = 1; i <= ratingCount; i++) {
 
-            ratingFilled.push(<span><img src={StarFilled} alt="star_filled" /></span>);
+            ratingFilled.push(<span key={`start-${i}`}><img src={StarFilled} alt="star_filled" /></span>);
             
         }
 
