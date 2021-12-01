@@ -51,15 +51,31 @@
         &__arrowRight {
             height: 79px;
             width: 46px;
-            top: 45%;
+            top: 40%;
             right: 10px;
         }
     
         &__arrowLeft {
             height: 79px;
             width: 46px;
-            top: 45%;
+            top: 40%;
             left: 10px;
+        }
+
+        &__counterPictures {
+            position: absolute;
+            z-index: 2;
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 142.6%;
+            display: flex;
+            align-items: flex-end;
+            text-align: center;
+            color: #FFFFFF;
+            bottom: 13px;
+            right: 609px;
         }
     
         img {

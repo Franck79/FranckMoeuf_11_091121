@@ -39,6 +39,9 @@ class Carousel extends Component {
                             }}>
                         <img src={arrowLeft} alt="arrow_left" />
                     </button>
+                    <span className="carousel__counterPictures">
+                        {this.state.indexImageDisplayed+1}/{logement.pictures.length}
+                    </span>
                     <img src={logement.pictures[this.state.indexImageDisplayed]} alt="pictures_carousel" />
                 </div>
             </>
