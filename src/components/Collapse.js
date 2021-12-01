@@ -3,18 +3,25 @@ import ChevronDown from '../assets/ChevronDown.png';
 import ChevronUp from '../assets/ChevronUp.png';
 
 class Collapse extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {isOpen: false}
 
+    constructor(props) {
+
+        super(props)
+        // Textes cachés par défaut.
+        this.state = {isOpen: false}
+        // Props pour les textes qui sont affichés par défaut.
         if (props.isDefaultOpen) {
+
             this.state.isOpen = true;
+
         }
     }
+
     render() {
+        // On récupère le pathname afin de switcher de classe css
+        // selon la page About ou Profil de l'annonce.
         const {pathname} = window.location;
         const isLogmentActive = pathname.includes("logement");
-        console.log(pathname);
         
         return (
             <div className={`link ${isLogmentActive && pathname !== "/logement/about"

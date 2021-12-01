@@ -6,12 +6,15 @@ import Carousel from '../components/Carousel';
 import Footer from '../components/Footer';
 import datas from '../data/Kasa.json';
 class Property extends Component {
-
+    // Scroll Top a 0 par defaut.
     componentDidMount() {
+
         window.scrollTo(0, 0)
+
     }
 
     render() {
+        
         const params = new URLSearchParams(window.location.search);
         const id = params.get("id");
         const logement = datas.find(data => data.id === id)

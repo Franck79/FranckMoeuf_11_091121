@@ -5,7 +5,9 @@ import Gallery from '../components/Gallery'
 import Footer from '../components/Footer'
 
 class Home extends Component {
+
     render() {
+        
         return (
             <>
                 <Header />

@@ -9,18 +9,21 @@ class AppartmentProfil extends Component {
         const id = params.get("id");
         const logement = datas.find(data => data.id === id);
         const ratingCount = logement.rating;
+        // On sépare Nom et prénom de l'agent
         const hostFirstName = logement.host.name.substr(0,logement.host.name.indexOf(' '));
         const hostLastName = logement.host.name.substr(logement.host.name.indexOf(' ')+1);
+        // Initalisation des array pour les étoiles pleines et vides.
         const ratingFilled = [];
         const ratingUnfilled = [];
         const ratingMax = 5;
 
+        // Full stars display
         for (let i = 1; i <= ratingCount; i++) {
 
             ratingFilled.push(<span key={`start-${i}`}><img src={StarFilled} alt="star_filled" /></span>);
             
         }
-
+        // Empty rating stars display
         if (ratingCount < 5) {
 
             let starUnfilled = ratingMax - ratingCount;

@@ -5,7 +5,9 @@ import Collapse from '../components/Collapse'
 import Footer from '../components/Footer'
 
 class About extends Component {
+
     render() {
+        
         return (
             <>
                 <Header />

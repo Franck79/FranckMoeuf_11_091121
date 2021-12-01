@@ -4,18 +4,26 @@ import arrowRight from '../assets/ArrowRight.png';
 import arrowLeft from '../assets/ArrowLeft.png';
 
 class Carousel extends Component {
+
     constructor(props) {
+
         super(props)
+        // props avec l'index de l'image par défaut à 0.
         this.state = {
+
             indexImageDisplayed: 0
+
         }
     }
+
     render() {
+        // Get current id in url.
         const params = new URLSearchParams(window.location.search);
         const id = params.get("id");
+        // On récupère les datas de l'id en cours.
         const logement = datas.find(data => data.id === id)
         const countPictures = logement.pictures.length - 1;
-
+        // Si on passe la dernière image on revient à 0.
         if (this.state.indexImageDisplayed > countPictures) {
 
             this.setState({indexImageDisplayed : 0});
