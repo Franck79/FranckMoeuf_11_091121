@@ -45,7 +45,7 @@ class AppartmentProfil extends Component {
                     <article className="property__tags">
                         {logement.tags.map((tag) => {
                             return (
-                                <span className="tag">
+                                <span className="tag" key={tag}>
                                     {tag}
                                 </span>
                             )

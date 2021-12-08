@@ -17,8 +17,8 @@ class Header extends Component {
                     <img src={Logo} alt="Logo_Kasa" />
                 </div>
                 <div className="header__navigation">
-                    <NavLink exact to="/" className={`link ${!isAboutActive ? "nav-active":""} `}>Accueil</NavLink>
-                    <NavLink exact to="about" className={`link ${isAboutActive ? "nav-active":""} `}>A propos</NavLink>
+                    <NavLink to="/" className={`link ${!isAboutActive ? "nav-active":""} `}>Accueil</NavLink>
+                    <NavLink to="about" className={`link ${isAboutActive ? "nav-active":""} `}>A propos</NavLink>
                 </div>
             </header>
         );

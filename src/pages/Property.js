@@ -30,12 +30,12 @@ class Property extends Component {
                                         {logement.description}
                                     </div>
                                 )}/>
-                    <Collapse title="Équipements" isDefaultOpen 
+                    <Collapse title="Équipements" isDefaultOpen
                                 content={(
                                     <ul className="profil__text">
                                     {logement.equipments.map((equipment) => {
                                         return (
-                                            <li>
+                                            <li key={equipment}>
                                                 {equipment}
                                             </li>
                                         )
